@@ -1,5 +1,5 @@
 # thinkphp5-api
-=================
+
 基于ThinkPHP5.1* 基础上开发的一个简单的restful api
 
 在开源项目[thinkphp5-restfulapi](https://github.com/Leslin/thinkphp5-restfulapi)上修改而来
