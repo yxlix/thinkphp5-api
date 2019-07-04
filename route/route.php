@@ -9,12 +9,13 @@
 // | Author: liu21st <liu21st@gmail.com>
 // +----------------------------------------------------------------------
 
-Route::get('think', function () {
-    return 'hello,ThinkPHP5!';
+use think\facade\Route;
+//设置允许跨域请求
+Route::allowCrossDomain(true);
+
+Route::group(':version/demo', function () {
+    Route::get('/', 'api/:version.demo/index');
+    Route::post('/save', 'api/:version.demo/save');
+    Route::post('/update', 'api/:version.demo/update');
+    Route::get('/login', 'api/:version.demo/login');
 });
-
-Route::get('hello/:name', 'index/hello');
-
-return [
-
-];
